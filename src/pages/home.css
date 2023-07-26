@@ -1,0 +1,105 @@
+.posterImage {
+  max-height: 700px;
+}
+
+.posterImage > img {
+  margin: auto;
+  display: block;
+  width: 100%;
+  height: auto;
+  mask-image: linear-gradient(to bottom, rgba(9, 9, 9, 1), rgba(0, 0, 0, 0));
+}
+
+.posterImage__overlay {
+  position: absolute;
+  padding: 5rem;
+  bottom: 0px;
+  max-height: 70%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: flex-start;
+  background-image: linear-gradient(rgb(0, 0, 0, 0), rgb(0, 0, 0, 1));
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.posterImage__overlay:hover {
+  opacity: 2;
+}
+
+.posterImage__title {
+  font-weight: 800;
+  font-size: 3rem;
+  margin-bottom: 0.4rem;
+  text-align: left;
+}
+
+.posterImage__runtime {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 30px;
+}
+
+.posterImage__rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.posterImage__description {
+  font-style: italic;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+  display: flex;
+  text-align: left;
+  width: 50%;
+}
+
+.list__genres {
+  margin: 1.25rem 0;
+  padding: 0.3rem;
+  border: 2px solid white;
+  color: white;
+  border-radius: 20px;
+  margin-right: 1rem;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0),
+    rgb(154, 29, 29)
+  );
+  /* z-index: 100; */
+}
+
+/* ///////// */
+/* tablet */
+/* @media screen and (max-width: 768px) and (max-width: 1023px) {
+  .posterImage__title {
+    font-weight: 700;
+    font-size: 2rem;
+  }
+
+  .posterImage__runtime {
+    font-size: 1.5rem;
+  }
+} */
+
+/* //////// */
+
+@media (max-width: 768px) {
+  .posterImage__title {
+    font-size: 1.7rem;
+  }
+
+  .posterImage__runtime {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .posterImage__title {
+    font-size: 1.5rem;
+  }
+}

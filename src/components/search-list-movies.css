@@ -1,0 +1,32 @@
+.section {
+  width: 100%;
+  min-height: 70vh;
+}
+
+.section-title {
+  font-size: 2rem;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 3.5rem;
+  margin-top: 1rem;
+}
+
+.section-center {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 620px) {
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .section-center {
+    flex-direction: row;
+  }
+}

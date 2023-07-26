@@ -1,0 +1,32 @@
+main {
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  background-color: black;
+  max-width: 1500px;
+  min-height: 10vh;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__span {
+  color: white;
+}
+
+.header a {
+  color: #f94c66;
+}
+
+@media (max-width: 390px) {
+  .footer__span {
+    font-size: 0.8rem;
+  }
+}

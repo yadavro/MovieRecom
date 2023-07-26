@@ -1,0 +1,62 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: grid;
+  place-items: center;
+  transition: all 0.3s linear;
+  visibility: hidden;
+  z-index: -1;
+}
+
+/* OPEN/CLOSE MODAL */
+.show-modal {
+  visibility: visible;
+  z-index: 1000000000;
+}
+
+h3 {
+  text-transform: capitalize;
+  color: #bb2525;
+  font-size: 1.5rem;
+}
+
+.modal__feature {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem;
+}
+
+.unavailable__icon {
+  color: red;
+  font-size: 4rem;
+}
+
+.modal-container {
+  background: #fff;
+  border-radius: 1.5rem;
+  width: 80vw;
+  min-height: 30vh;
+  max-width: 850px;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.close-modal-btn {
+  position: absolute;
+  top: 1rem;
+  right: 0;
+  font-size: 2rem;
+  background: transparent;
+  border-color: transparent;
+  color: #bb2525;
+  cursor: pointer;
+}

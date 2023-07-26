@@ -1,0 +1,18 @@
+.page_title {
+  font-weight: 800;
+  font-size: 1.75rem;
+  text-align: center;
+  color: #fff;
+  margin: 2.5rem;
+}
+
+.page_content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.page_color {
+  color: #fff;
+}

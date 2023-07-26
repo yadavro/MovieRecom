@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: calc(60% + 0.8vmin);
+}
+
+body {
+  background-color: rgb(9, 9, 9);
+  overflow-x: hidden;
+  font-family: "Poppins", san-serif;
+}
+
+/* ///////// */
+/* mobile */
+@media screen and (max-width: 768px) {
+}
+/* ///////// */
